@@ -41,3 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Haikei
+    uniqueID: 2819890813
+    locked: 0
+  - name: Haikei1
+    uniqueID: 4208508373
+    locked: 0
+  - name: Haikei2
+    uniqueID: 3623322941
+    locked: 0
+  - name: Haikei3
+    uniqueID: 199792853
+    locked: 0
+  - name: Haikei4
+    uniqueID: 3218789987
+    locked: 0
+  - name: Haikei5
+    uniqueID: 2262703245
+    locked: 0
+  - name: Haikei6
+    uniqueID: 1628246053
+    locked: 0
+  - name: Haikei7
+    uniqueID: 3418212503
+    locked: 0
+  - name: Player
+    uniqueID: 67945411
+    locked: 0
