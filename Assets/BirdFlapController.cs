@@ -31,12 +31,12 @@ public class BirdFlapController : MonoBehaviour
 
         if (gameoverTextObject == null)
         {
-      //      Debug.LogError("GameOverTextオブジェクトが見つかりません。");
+//            Debug.LogError("GameOverTextオブジェクトが見つかりません。");
         }
 
         if (timeTextObject == null)
         {
-       //     Debug.LogError("TimeTextオブジェクトが見つかりません。");
+ //           Debug.LogError("TimeTextオブジェクトが見つかりません。");
         }
     }
 
@@ -47,15 +47,25 @@ public class BirdFlapController : MonoBehaviour
             return;
         }
 
-        // WASD キーによる移動
-        float moveX = Input.GetAxis("Horizontal") * moveSpeed;
-        float moveY = Input.GetAxis("Vertical") * moveSpeed;
-        rb.velocity = new Vector2(moveX, moveY);
+        // 常に右方向に移動する
+        float moveY = rb.velocity.y;
+
+        // Wキーで上、Sキーで下に移動する
+        if (Input.GetKey(KeyCode.W))
+        {
+            moveY = moveSpeed;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            moveY = -moveSpeed;
+        }
+
+        rb.velocity = new Vector2(moveSpeed, moveY);
 
         // スペースキーが押されたら上昇する
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            anim.Play("Flap");
+            anim.Play("Space");
             rb.velocity = new Vector2(rb.velocity.x, 0); // Reset vertical velocity for consistent jumps
             rb.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
         }
@@ -77,13 +87,13 @@ public class BirdFlapController : MonoBehaviour
         Debug.Log("何かにぶつかった！");
 
         // 何かにぶつかったらゲームオーバーとする
-        isGameOver = true;
+       // isGameOver = true;
 
-        if (gameoverTextObject != null)
-        {
+       // if (gameoverTextObject != null)
+      //  {
             // 画面に Game Over と表示する
-            Text gameoverText = gameoverTextObject.GetComponent<Text>();
-            gameoverText.text = "Game Over";
-        }
+      //      Text gameoverText = gameoverTextObject.GetComponent<Text>();
+      //      gameoverText.text = "Game Over";
+      //  }
     }
 }
