@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Ground
+  - Wall
+  - Kabe
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -67,4 +72,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 67945411
+    locked: 0
+  - name: kabe
+    uniqueID: 1108174015
     locked: 0
