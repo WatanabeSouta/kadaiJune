@@ -9,6 +9,8 @@ TagManager:
   - Wall
   - Kabe
   - Bullet
+  - Score
+  - Start
   layers:
   - Default
   - TransparentFX

@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Start.unity
+    guid: f9d2b02dcf6a4f7449555146dcc06bb3
+  - enabled: 1
+    path: Assets/6gatukadai.unity
+    guid: 29b17106e1426954999cf3dce699e706
+  - enabled: 1
+    path: Assets/ScoreScene.unity
+    guid: 88cf8b6a4642c4a4fa8af5f511d641a7
   m_configObjects: {}
