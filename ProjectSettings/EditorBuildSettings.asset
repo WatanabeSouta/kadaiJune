@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScoreScene.unity
     guid: 88cf8b6a4642c4a4fa8af5f511d641a7
+  - enabled: 1
+    path: Assets/Asobikata.unity
+    guid: e6e7f9cb1f062cd439e11727caad31fc
   m_configObjects: {}
